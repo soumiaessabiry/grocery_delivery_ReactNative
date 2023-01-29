@@ -10,15 +10,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
       
       },
-      text: {
-        width:299,
-        color: 'white',
-        fontSize: 48,
-        lineHeight: 84,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        marginHorizontal:50
-      },
       btnContainerStyle: {
         width:265,
         backgroundColor: '#6b8e23',
@@ -27,8 +18,6 @@ const styles = StyleSheet.create({
         marginHorizontal:75,
         display:'flex',
         marginTop:520,
-        
-
       },
       btnTextStyle: {
         fontWeight:'bold',
