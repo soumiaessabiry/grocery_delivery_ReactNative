@@ -1,26 +1,29 @@
 import { Image, StyleSheet, Text, View ,ImageBackground,TouchableOpacity,SafeAreaView, Dimensions} from 'react-native'
 import React from 'react'
 import styles from './stylehome'
-const { height }=Dimensions.get('screen')
-
+import Icon from 'react-native-vector-icons/AntDesign';
 const Home = () => {
   return (
-    <SafeAreaView style={{backgroundColor:'#ffe4b5',flex:1}}>
+    <SafeAreaView style={{backgroundColor:'#2e8b57',flex:1}}>
     <View>
-        <ImageBackground style={{
-            height:height/1.5
+        <Image style={{
+          width:450,
+          height:400,
+          alignSelf:'center',
+          marginTop:30
         }} 
         resizeMode="contain"
         source={require('../../images/Grocery.png')}
         />
-        <View style={{paddingHorizontal:10}}>
+        <View style={{paddingHorizontal:1}}>
             <Text style={{
-                color:'#008000',
+                color:'white',
                 fontSize:30,
                 fontWeight:'bold',
-                textAlign:'center'
+                textAlign:'center',
+                fontStyle:'italic'
                 }}>
-                Welcom Easy Grocery
+                Welcom to Easy Grocery
             </Text>
         </View>
         <View style={{paddingHorizontal:10, 
@@ -31,37 +34,26 @@ const Home = () => {
         
         }}>
            <TouchableOpacity style={{
-            backgroundColor:'#6b8e23',
             paddingVertical:20,
-            width:'44%',
-            borderRadius:20
+            width:100,
             }}>
             <Text style={{
-                fontSize:25,
                 fontWeight:'bold',
                 textAlign:'center',
-                color:'white',
+                color:'black',
              
             }}>
-                login
-            </Text>
-           </TouchableOpacity>
-           <TouchableOpacity style={{
-            // backgroundColor:'#6b8e23',
-            paddingVertical:20,
-            width:'44%',
-            borderRadius:20
-            }}>
-            <Text style={{
-                fontSize:25,
+                <Icon name="rightcircle"style={{
+                fontSize:85,
                 fontWeight:'bold',
                 textAlign:'center',
-                color:'black'
-            }}>
-                Register
+                color:'black',
+            }}></Icon>
             </Text>
            </TouchableOpacity>
+           
         </View>
+
 
     </View>
 </SafeAreaView>

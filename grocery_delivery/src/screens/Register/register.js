@@ -4,91 +4,123 @@ import styles from './styleregister'
 const {height}=Dimensions.get('screen')
 const Register = () => {
   return (
-   <SafeAreaView style={{backgroundColor:'#ffe4b5',flex:1}}>
+   <SafeAreaView style={{backgroundColor:'#2e8b57',flex:1, flexDirection: 'column',}}>
+    <View style={{flex: 1}}></View>
+        <View style={{
+            flex: 6,
+            backgroundColor: '#f8f8ff',
+            borderTopStartRadius:50,
+            borderTopEndRadius:50
+            }} >
+            <View>
+            <Text style={{fontSize:25,
+                color:'#2e8b57',
+                textAlign:'center',
+                fontWeight:'bold',
+                marginVertical:30
+                }}>Create Account</Text>
+            </View>
         <View>
-            <ImageBackground style={{
-                height:200
-            }} 
-            resizeMode="contain"
-            source={require('../../images/Grocery.png')}
-            />
-            <View style={{paddingHorizontal:10}}>
-                <Text style={{
-                    color:'#008000',
-                    fontSize:30,
+            <TextInput 
+                placeholder='Username'
+                placeholderTextColor={'#808080'}
+                style={{
+                    fontSize:20,
+                    padding:18,
+                    backgroundColor:'#d9f2e4',
+                    borderRadius:10,
+                    marginVertical:10,
+                    width:"80%",
+                    alignSelf:'center',
                     fontWeight:'bold',
-                    textAlign:'center'
-                    }}>
-                    Welcom Easy Grocery
-                </Text>
-            </View>
-            <View style={{paddingHorizontal:10, 
-                flexDirection:'row',
-                justifyContent:'space-evenly',
-                marginVertical:20
-
+                }}
             
-            }}>
-               <TouchableOpacity style={{
-                backgroundColor:'#6b8e23',
-                paddingVertical:20,
-                width:'44%',
-                borderRadius:20
-                }}>
-                <Text style={{
-                    fontSize:25,
+            />
+            <TextInput 
+                placeholder='Email'
+                placeholderTextColor={'#808080'}
+                style={{
+                    fontSize:20,
+                    padding:18,
+                    backgroundColor:'#d9f2e4',
+                    borderRadius:10,
+                    marginVertical:10,
+                    width:"80%",
+                    alignSelf:'center',
                     fontWeight:'bold',
-                    textAlign:'center',
-                    color:'white',
-                 
-                }}>
-                    login
-                </Text>
-               </TouchableOpacity>
-               <TouchableOpacity style={{
-                // backgroundColor:'#6b8e23',
-                paddingVertical:20,
-                width:'44%',
-                borderRadius:20
-                }}>
-                <Text style={{
-                    fontSize:25,
+                
+                    
+                }}
+            />
+            <TextInput 
+                placeholder='Password'
+                placeholderTextColor={'#808080'}
+                style={{
+                    fontSize:20,
+                    padding:18,
+                    backgroundColor:'#d9f2e4',
+                    borderRadius:10,
+                    marginVertical:10,
+                    width:"80%",
+                    alignSelf:'center',
                     fontWeight:'bold',
-                    textAlign:'center',
-                    color:'black'
-                }}>
-                    Register
-                </Text>
-               </TouchableOpacity>
-            </View>
+                
+                    
+                }}
+            />
+            <TextInput 
+                placeholder='Confirm Password'
+                placeholderTextColor={'#808080'}
+                style={{
+                    fontSize:20,
+                    padding:18,
+                    backgroundColor:'#d9f2e4',
+                    borderRadius:10,
+                    marginVertical:10,
+                    width:"80%",
+                    alignSelf:'center',
+                    fontWeight:'bold',
+                }}
+            />
+             <TouchableOpacity style={{
+                width:"60%",
+                alignSelf:'center',
+                padding:15,
+                marginVertical:10,
+                borderRadius:20,
+                backgroundColor:'#2e8b57',
 
+            }}>
+            <Text style={{
+                color:'white',
+                textAlign:"center",
+                fontSize:25,
+                fontWeight:'bold'
+            }}>
+                Sign up
+            </Text>    
+            </TouchableOpacity>
+            <View style={{flexDirection:'row',justifyContent:'space-evenly'}}>
+                <Text style={{
+                    fontSize:18,
+                    color:"#696969",
+                    fontWeight:'bold'
+                    }}>
+                    Already heve an account ?
+                </Text>
+                <Text style={{
+                    fontSize:19,
+                    color:"#2e8b57",
+                    fontWeight:'bold'
+                    }}>
+                    sign in
+                </Text>
+              
+            </View>
         </View>
+</View>
    </SafeAreaView>
   )
 }
 
 export default Register
-{/* <Text style={styles.btnTextStyle}>Get start </Text> */}
-{/* <View style={[styles.vieuhome,{flexDirection: 'column'}]}>
-<ImageBackground source={require('../../images/Grocery.png')} resizeMode="cover" style={styles.image}>
-  <View style={{flex: 1}}  >
-      <Text>Welcom </Text>
-      <Text>Sign in to continue </Text>
-  </View>
-  <View style={{flex: 5,display:'flex'}}  >
-      <View style={{ flex: 5,marginHorizontal:40,alignSelf:'center'}}>
-          <View style={{width:300}}>
-              <Text style={styles.textregister}>Register</Text>
-              <View style={styles.formregister}>
-                  <TextInput style={styles.input} placeholder="Username" />                        
-                  <TextInput style={styles.input} placeholder="Email" />                        
-                  <TextInput style={styles.input}  secureTextEntry={true}
-                      placeholder="Enter Password"/>      
-              </View>
-              <TextInput style={styles.btnTextStyle}>Register</TextInput>
-          </View>              
-      </View>          
-  </View>            
-</ImageBackground>
-</View> */}
-
