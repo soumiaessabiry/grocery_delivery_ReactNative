@@ -55,17 +55,13 @@ const Register = ({navigation}) => {
                 </View>
         
                 <TouchableOpacity style={styles.touchableopacity}>
-                    <Text style={styles.texttouchable}>
+                    <Text style={styles.texttouchable}
+                    onPress={() => navigation.navigate('Product')}
+                    >
                         Sign up
                     </Text>    
                 </TouchableOpacity>
-                <TouchableOpacity style={[styles.touchableopacity,{backgroundColor:'white'}]}>
-                    <Text style={[styles.texttouchable,{color:"#6b8e23"}]}
-                        onPress={() => navigation.navigate('Login')}
-                    >
-                    Sign in
-                    </Text>    
-                </TouchableOpacity>
+              
             </View>
         </View>
     </ImageBackground>
