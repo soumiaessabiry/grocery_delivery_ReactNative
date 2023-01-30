@@ -1,14 +1,14 @@
 import {StyleSheet} from 'react-native'
 const styles=StyleSheet.create({
     viewregisterlogin:{
-        flex: 6,
+        flex: 7,
         backgroundColor: '#f8f8ff',
-        borderTopStartRadius:50,
-        borderTopEndRadius:50
+        borderTopStartRadius:30,
+        borderTopEndRadius:30
     },
     text:{
-        fontSize:25,
-        color:'#2e8b57',
+        fontSize:35,
+        color:'#6b8e23',
         textAlign:'center',
         fontWeight:'bold',
         marginVertical:25
@@ -16,17 +16,22 @@ const styles=StyleSheet.create({
     viewinputs:{
         flexDirection:'row',
         justifyContent:'space-evenly',
-        backgroundColor:'#d9f2e4',
+        backgroundColor:'#f0f8ff',
         width:"80%",
         borderRadius:10,
-        marginVertical:10,
+        // marginVertical:10,
         alignSelf:'center',
         fontWeight:'bold',
+        padding:4,
+        borderBottomWidth:5,
+        borderBottomColor:'#6b8e23'
+
+
     },
     viewicon:{
-        fontSize:35,
+        fontSize:25,
         borderRadius:10,
-        marginVertical:20,
+        // marginVertical:10,
         alignSelf:'center',
         fontWeight:'bold',
     },
@@ -38,10 +43,10 @@ const styles=StyleSheet.create({
     touchableopacity:{
         width:"60%",
         alignSelf:'center',
-        padding:15,
+        padding:14,
         marginVertical:8,
-        borderRadius:20,
-        backgroundColor:'#2e8b57',
+        borderRadius:15,
+        backgroundColor:'#6b8e23',
     },
     texttouchable:{
         color:'white',

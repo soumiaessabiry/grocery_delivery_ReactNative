@@ -1,19 +1,18 @@
-import { StyleSheet, Text, View,SafeAreaView,TextInput,TouchableOpacity} from 'react-native'
+import { StyleSheet, Text, View,SafeAreaView,TextInput,TouchableOpacity,ImageBackground} from 'react-native'
 import React from 'react'
 import Icon from "react-native-vector-icons/FontAwesome5";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import styles from '../Allstyle'
-const Login = () => {
+const Login = ({navigation}) => {
   return (
-    <SafeAreaView style={{backgroundColor:'#2e8b57',flex:1, flexDirection: 'column',}}>
-    <View style={{flex: 1}}></View>
-    <View style={styles.viewregisterlogin} >
+    <ImageBackground  source={require("../../images/Frutas.png")} style={{flex:1, flexDirection: 'column'}}>
+  
         <View>
-            <Text style={styles.text}>Login in to your account</Text>
+            <Text style={styles.text}>Login</Text>
         </View>
         <View>
-            <View style={styles.viewinputs}>
+            <View style={[styles.viewinputs,{marginVertical:15}]}>
                 <AntDesign name="mail"   
                 style={styles.viewicon}>
                 </AntDesign> 
@@ -23,7 +22,7 @@ const Login = () => {
                     style={styles.inputform}
                 />
             </View>
-            <View style={styles.viewinputs}>
+            <View style={[styles.viewinputs,{marginVertical:10}]}>
                 <Icon name="user-lock"  
                 style={styles.viewicon}>
                 </Icon>         
@@ -33,22 +32,26 @@ const Login = () => {
                     style={styles.inputform}
                 />
             </View>
-            <TouchableOpacity style={styles.touchableopacity}>
+            <TouchableOpacity style={styles.touchableopacity}
+            onPress={() => navigation.navigate('Register')}
+            >
                 <Text style={styles.texttouchable}>
-                    Login
+                    Sign up
                 </Text>    
             </TouchableOpacity>
             <View style={styles.textdesciption1}>
-                <Text style={styles.textdesciption2}>
-                    Don't heve an account ?
-                </Text>
-                <Text style={[styles.textdesciption2,{color:'black'}]}>
-                    Login in
-                </Text>
+            <TouchableOpacity style={[styles.touchableopacity,{backgroundColor:'white'}]}>
+                <Text style={[styles.texttouchable,{color:"#6b8e23"}]}
+                    onPress={() => navigation.navigate('Register')}
+                >
+                Sign in
+                </Text>    
+            </TouchableOpacity>
+            
             </View>
         </View>
-    </View>
-   </SafeAreaView>
+    {/* </View> */}
+   </ImageBackground>
   )
 }
 

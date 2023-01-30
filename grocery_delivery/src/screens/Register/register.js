@@ -5,56 +5,53 @@ import Icon from "react-native-vector-icons/FontAwesome5";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-const Register = () => {
+const Register = ({navigation}) => {
   return (
-   <SafeAreaView style={{backgroundColor:'#2e8b57',flex:1, flexDirection: 'column',}}>
-        <View style={{flex: 1}}></View>
-        <View style={styles.viewregisterlogin} >
+     <ImageBackground  source={require("../../images/Frutas.png")} style={{flex:1, flexDirection: 'column'}}>
+        {/* <View style={{flex: 1}}></View> */}
+        <View  >
             <View>
                 <Text style={styles.text}>
-                    Create Account
+                    Register
                 </Text>
             </View>
             <View>
-                <View style={styles.viewinputs}>
+            <View style={[styles.viewinputs,{marginVertical:12}]}>
                     <Icon name="user"   
                     style={styles.viewicon}>
                     </Icon> 
                     <TextInput 
                     placeholder='Username'
                     placeholderTextColor={'#808080'}
-                        style={styles.inputform}
-                    />
+                        style={[styles.inputform,{paddingVertical:13}]}                    />
                 </View>
-                <View style={styles.viewinputs}>
+            <View style={[styles.viewinputs,{marginVertical:12}]}>
                 <AntDesign name="mail"   
                   style={styles.viewicon}>
                 </AntDesign> 
                 <TextInput 
                     placeholder='Email'
                     placeholderTextColor={'#808080'}
-                    style={styles.inputform}
+                    style={[styles.inputform,{paddingVertical:13}]}
                 />
                 </View>
-                <View style={styles.viewinputs}>
+            <View style={[styles.viewinputs,{marginVertical:12}]}>
                     <Icon name="user-lock"  
                     style={styles.viewicon}>
                     </Icon>         
                     <TextInput 
                         placeholder='Password'
                         placeholderTextColor={'#808080'}
-                        style={styles.inputform}
-                    />
+                        style={[styles.inputform,{paddingVertical:13}]}                    />
                 </View>
-                <View style={styles.viewinputs}>
+            <View style={[styles.viewinputs,{marginVertical:12}]}>
                     <MaterialIcons name="verified-user"  
                     style={styles.viewicon}>
                     </MaterialIcons>         
                     <TextInput 
                          placeholder='Confirm Password'
                         placeholderTextColor={'#808080'}
-                        style={styles.inputform}
-                    />
+                        style={[styles.inputform,{paddingVertical:13}]}                    />
                 </View>
         
                 <TouchableOpacity style={styles.touchableopacity}>
@@ -62,17 +59,17 @@ const Register = () => {
                         Sign up
                     </Text>    
                 </TouchableOpacity>
-                <View style={styles.textdesciption1}>
-                    <Text style={styles.textdesciption2}>
-                        Already heve an account ?
-                    </Text>
-                    <Text style={[styles.textdesciption2,{color:'black'}]}>
-                        sign in
-                    </Text>
-                </View>
+                <TouchableOpacity style={[styles.touchableopacity,{backgroundColor:'white'}]}>
+                    <Text style={[styles.texttouchable,{color:"#6b8e23"}]}
+                        onPress={() => navigation.navigate('Login')}
+                    >
+                    Sign in
+                    </Text>    
+                </TouchableOpacity>
             </View>
         </View>
-   </SafeAreaView>
+    </ImageBackground>
+
   )
 }
 

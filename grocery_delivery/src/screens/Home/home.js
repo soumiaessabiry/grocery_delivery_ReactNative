@@ -2,9 +2,9 @@ import { Image, StyleSheet, Text, View ,ImageBackground,TouchableOpacity,SafeAre
 import React from 'react'
 import styles from './stylehome'
 import Icon from 'react-native-vector-icons/AntDesign';
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
-    <SafeAreaView style={{backgroundColor:'#2e8b57',flex:1}}>
+    <SafeAreaView style={{backgroundColor:'#6b8e23',flex:1}}>
     <View>
         <Image style={{
           width:450,
@@ -42,12 +42,14 @@ const Home = () => {
                 textAlign:'center',
                 color:'black',
              
-            }}>
-                <Icon name="rightcircle"style={{
-                fontSize:85,
-                fontWeight:'bold',
-                textAlign:'center',
-                color:'black',
+            }}
+            onPress={() => navigation.navigate('Login')}
+            >
+            <Icon name="rightcircle"style={{
+            fontSize:85,
+            fontWeight:'bold',
+            textAlign:'center',
+            color:'black',
             }}></Icon>
             </Text>
            </TouchableOpacity>
