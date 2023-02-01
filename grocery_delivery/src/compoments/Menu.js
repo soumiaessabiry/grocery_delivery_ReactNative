@@ -3,8 +3,7 @@ import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
-import Home from '../screens/Home/home';
-import Login from '../screens/Login/login';
+
 import Icon from "react-native-vector-icons/FontAwesome5";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AntDesign from 'react-native-vector-icons/AntDesign';

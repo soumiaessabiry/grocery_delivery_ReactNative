@@ -8,7 +8,6 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 const Register = ({navigation}) => {
   return (
      <ImageBackground  source={require("../../images/Frutas.png")} style={{flex:1, flexDirection: 'column'}}>
-        {/* <View style={{flex: 1}}></View> */}
         <View  >
             <View>
                 <Text style={styles.text}>

@@ -7,7 +7,7 @@ import Login from './screens/Login/login';
 import Register from './screens/Register/register';
 import Menu from './compoments/Menu';
 import Product from './screens/Dashbord/Product';
-
+import Header from './compoments/Header';
 const Stack = createNativeStackNavigator();
 const App = () => {
   return (
@@ -18,6 +18,7 @@ const App = () => {
         <Stack.Screen name='Register' component={Register}></Stack.Screen>
         <Stack.Screen name='Menu' component={Menu}></Stack.Screen>
         <Stack.Screen name='Product' component={Product}></Stack.Screen>
+        <Stack.Screen name='Header' component={Header}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -25,4 +26,3 @@ const App = () => {
 
 export default App
 
-const styles = StyleSheet.create({})
