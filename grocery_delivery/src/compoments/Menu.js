@@ -18,19 +18,19 @@ const Menu = () => {
         <View >
             <TouchableOpacity >
                 <Text style={styles.sizeicon}
-                onPress={() => navigation.navigate('Home')}>
+                onPress={() => navigation.navigate('Product')}>
                     <Icon name="home" style={styles.sizeicon}></Icon>
                 </Text>    
             </TouchableOpacity>
         </View>
-        <View >
+        {/* <View >
             <TouchableOpacity >
                 <Text style={styles.sizeicon}
                 onPress={() => navigation.navigate('Login')}>
                      <MaterialIcons name="favorite" style={styles.sizeicon}></MaterialIcons>
                 </Text>    
             </TouchableOpacity>
-        </View>
+        </View> */}
         <View >
             <TouchableOpacity >
                 <Text style={styles.sizeicon}

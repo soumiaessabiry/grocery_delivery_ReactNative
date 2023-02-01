@@ -8,26 +8,26 @@ import dataProducts from './DataProduct';
 import dataCategorie from './DataCategorie';
 const Product = ({navigation}) => {
   return (
-    <View style={{flex: 1,backgroundColor:'#f7fbf0'}} >
-      <View style={{flex: 0.3}}>
+    <View style={{flex: 1}}>
+      <View style={{marginVertical: 8}}>
         <Header />
         <ScrollView horizontal>
           <View style={styles.viewAllcategorie}>
             {dataCategorie.map((e, i) => (
-              <View source={e.image} key={i} style={[styles.viewcategorie,{backgroundColor: e.bgColor}]}  >
+              <ImageBackground source={e.image} key={i} style={styles.viewcategorie}  resizeMode="cover" >
                 <Text style={styles.textBackground}>{e.name}</Text>
-              </View>
+              </ImageBackground>
             ))}
           </View>
         </ScrollView>
       </View>
-      <ScrollView style={{flex: 1}}>
+      <ScrollView>
         <View style={styles.viewProduct}>
           {dataProducts.map((e, i) => (
             <View style={styles.viewproduit} key={i}>
               <View style={styles.produit}>
-                <Image source={e.image} style={styles.imageproduit}></Image>
-                <View>
+                <Image source={e.image} style={styles.imageproduit} ></Image>
+                <View style={{paddingVertical: 6}}>
                   <Text style={[styles.titleproduit, {color: 'black'}]}>
                     {e.name}
                   </Text>
@@ -49,10 +49,8 @@ const Product = ({navigation}) => {
           ))}
         </View>
       </ScrollView>
-      <View style={{flex: 0.1}}>
       <Menu />
-      </View>
-     </View>
+    </View>
   );
 };
 
