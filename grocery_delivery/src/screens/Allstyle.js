@@ -102,7 +102,11 @@ const styles=StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 25,
       },
-    
+      imageproduit: {
+        width:'100%',
+        height: 300,
+        resizeMode: 'contain',
+      },
 
 })
 export default styles

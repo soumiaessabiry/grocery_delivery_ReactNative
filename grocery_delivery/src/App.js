@@ -20,11 +20,11 @@ const App = () => {
           component={Home}></Stack.Screen>
         <Stack.Screen
           name="Login"
-          options={{headerShown: false}}
+          // options={{headerShown: false}}
           component={Login}></Stack.Screen>
         <Stack.Screen
           name="Register"
-          options={{headerShown: false}}
+          // options={{headerShown: false}}
           component={Register}></Stack.Screen>
         <Stack.Screen
           name="Menu"
