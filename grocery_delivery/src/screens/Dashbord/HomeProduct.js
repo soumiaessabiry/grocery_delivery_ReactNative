@@ -39,7 +39,7 @@ const Product = ({navigation}) => {
                     ]}>
                     <Text
                       style={styles.textTouchableOpacity}
-                      onPress={() => navigation.navigate('Register')}>
+                      onPress={() => navigation.navigate('Product')}>
                       Add
                     </Text>
                   </TouchableOpacity>

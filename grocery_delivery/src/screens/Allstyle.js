@@ -63,8 +63,45 @@ const styles=StyleSheet.create({
         fontSize:19,
         color:"#2e8b57",
         fontWeight:'bold'
-    }
+    },
+    product:{
+        alignSelf:'center',
+        fontSize:20,
+        fontWeight:'bold',
+        color:'black'
 
+        },
+    productbtn:{
+        fontSize:23,
+        fontWeight:'bold',
+        fontStyle:'italic',
+        borderRadius: 15,
+        backgroundColor: '#6b8e23',
+        width:40,
+        color:'white'
+   
+    },
+    TouchableOpacity: {
+        backgroundColor: '#6b8e23',
+        width: '80%',
+        paddingVertical: 15,
+        alignSelf: 'center',
+        borderRadius: 25,
+      },
+    Touchablebtnmp: {
+        backgroundColor: '#6b8e23',
+        width: 40,
+        height:40,
+        alignSelf:"flex-end",
+        borderRadius: 25,
+        marginHorizontal:10
+      },
+      textTouchableOpacity: {
+        color: 'white',
+        alignSelf: 'center',
+        fontWeight: 'bold',
+        fontSize: 25,
+      },
     
 
 })

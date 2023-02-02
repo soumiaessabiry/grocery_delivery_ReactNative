@@ -18,7 +18,7 @@ const Menu = () => {
         <View >
             <TouchableOpacity >
                 <Text style={styles.sizeicon}
-                onPress={() => navigation.navigate('Product')}>
+                onPress={() => navigation.navigate('HomeProduct')}>
                     <Icon name="home" style={styles.sizeicon}></Icon>
                 </Text>    
             </TouchableOpacity>
